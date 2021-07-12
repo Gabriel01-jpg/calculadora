@@ -1,0 +1,72 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    background-color: gray;
+    border: 1px solid black;
+}
+
+input {
+    margin: 15px;
+    font-size: 20px;
+    height: 120px;
+    width: 90%;
+}
+
+form {
+    display: flex;
+}
+
+
+form .numbers {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+form .numbers button {
+    width: 100px;
+    height: 50px;
+    margin: 5px 5px;
+    border-radius: 1rem;
+    border: none;
+    font-size: 15px;
+    padding: 8px;
+    cursor: pointer;
+}
+
+form .numbers button:hover{
+    background: red;
+}
+
+form .operator {
+    margin: 10px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+form .operator button {
+    margin-bottom: 15px;
+    font-size: 30px;
+    padding: 10px 30px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
