@@ -18,6 +18,7 @@
     flex-direction: column;
     background-color: gray;
     border: 1px solid black;
+    border-radius: 15px;
 }
 
 input {
@@ -25,6 +26,8 @@ input {
     font-size: 20px;
     height: 120px;
     width: 90%;
+    border: none;
+    border-radius: 15px;
 }
 
 form {
@@ -37,6 +40,7 @@ form .numbers {
     grid-template-columns: 1fr 1fr 1fr;
     padding-left: 15px;
     padding-right: 15px;
+    align-items: center;
 }
 
 form .numbers button {
@@ -51,15 +55,13 @@ form .numbers button {
 }
 
 form .numbers button:hover{
-    background: red;
+    background: rgb(87, 83, 83);
 }
 
 form .operator {
     margin: 10px;
-    flex-grow: 1;
     display: flex;
     flex-direction: column;
-    justify-content: center;
 }
 
 form .operator button {
@@ -69,4 +71,9 @@ form .operator button {
     border: none;
     border-radius: 10px;
     cursor: pointer;
+}
+
+form .operator button:hover {
+    background: rgb(87, 83, 83);
+    
 }

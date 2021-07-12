@@ -1,16 +1,28 @@
 const calculatorBtn = document.querySelector('.calculator');
-console.log(calculatorBtn)
-
 
 
 function btnNumberValue(btn) {
     const input = document.querySelector('.input')
     btn.addEventListener('click', function(){
-        input.value += btn.value
-        
+        if(btn.value === 'c'){
+            input.value = ''
+        } else {
+            input.value += btn.value
+        }
+
     })
 }
 
 for(itens of calculatorBtn){
     btnNumberValue(itens)
+}
+
+function calcular(){
+    const input = document.querySelector('.input')
+    if(input.value != '' ){
+        console.log(input.value)
+    } else {
+        input.value = 'Digite um valor'
+    }
+    
 }
